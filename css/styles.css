@@ -47,7 +47,7 @@ body::before {
     pointer-events: none;
     inset: 0;
     opacity: .15;
-    background-image: url("/imagenes/capa_fondo.svg");
+    background-image: url("../imagenes/capa_fondo.svg");
     background-size: 70vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ h1 {
         position: absolute;
         inset: 10%;
         border-radius: 50%;
-        background-image: url("/imagenes/capa_fondo.svg");
+        background-image: url("../imagenes/capa_fondo.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -499,5 +499,6 @@ body .sorteo>* {
 .btn-ganador:hover {
     scale: 1.1;
 }
+
 
 /* END ganador */
