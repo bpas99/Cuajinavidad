@@ -120,7 +120,7 @@ document.querySelectorAll('.premio').forEach((element) => {
 
         try {
             let ganador = '';
-            if (element.id = "switch") {
+            if (element.id == "switch") {
                 ganador = await sortear(true);
             } else {
                 ganador = await sortear(false);
@@ -173,3 +173,4 @@ document.getElementById("csvFile").addEventListener("change", (event) => {
     };
     reader.readAsText(file);
 });
+
