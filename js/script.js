@@ -28,8 +28,11 @@ function csvOneLineToParticipantes(csvText) {
     // Lista ponderada para la switch2
     window.participantesPonderados = [];
     window.participantes.forEach(p => {
-        const entries = Math.max(1, p.tenure);
-        for (let i = 0; i < entries; i++) {
+        window.participantesPonderados.push(p);
+        if (p.tenure > 3) {
+            window.participantesPonderados.push(p);
+        }
+        if (p.tenure > 11) {
             window.participantesPonderados.push(p);
         }
     });
@@ -173,4 +176,5 @@ document.getElementById("csvFile").addEventListener("change", (event) => {
     };
     reader.readAsText(file);
 });
+
 
